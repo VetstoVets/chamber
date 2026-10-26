@@ -891,6 +891,11 @@
   
 
     .board-note { background: var(--navy); color: var(--white); padding: 10px 16px; text-align: center; font-size: 15px; }
+    .nav-group { position: relative; display: inline-flex; }
+    .nav-dropdown { display: none; position: absolute; top: 100%; left: 0; background: #ffffff; border: 1px solid var(--line); border-radius: 10px; padding: 8px; z-index: 80; min-width: 190px; box-shadow: 0 12px 28px rgba(6,26,51,.18); }
+    .nav-group:hover .nav-dropdown, .nav-group:focus-within .nav-dropdown { display: block; }
+    .nav-dropdown a { display: block; padding: 6px 8px; white-space: nowrap; }
+    .primary-nav[data-open="true"] .nav-dropdown { display: block; position: static; box-shadow: none; border: none; padding: 0 0 0 16px; min-width: 0; }
     .filters { display: flex; flex-wrap: wrap; gap: 14px; align-items: end; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin: 8px 0 20px; }
     .filters label { display: flex; flex-direction: column; gap: 5px; font-size: 14px; font-weight: 600; color: var(--muted); }
     .filters select, .filters input { font: inherit; padding: 8px 10px; border: 1px solid var(--line); border-radius: 9px; background: var(--surface); color: var(--ink); }
@@ -938,8 +943,7 @@
             <a href="https://www.vetstovetsunited.org/what-we-do">About Us</a>
             <a href="https://www.vetstovetsunited.org/enrollment">Our Program</a>
             <a href="https://www.vetstovetsunited.org/ways-to-give">Get Involved</a>
-            <a href="https://www.vetstovetsunited.org/news-announcements">News &amp; Events</a>
-            <a href="https://chamber.vetstovetsunited.org/">Chamber Events</a>
+            <span class="nav-group"><a href="https://www.vetstovetsunited.org/news-announcements">News &amp; Events</a><span class="nav-dropdown"><a href="https://chamber.vetstovetsunited.org/">Chamber Events</a></span></span>
             <a href="https://www.vetstovetsunited.org/contact">Contact Us</a>
             <a class="login-link" href="https://www.vetstovetsunited.org"><span class="login-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 12a4.25 4.25 0 1 0 0-8.5 4.25 4.25 0 0 0 0 8.5Zm-7.25 8.5c.5-4 3.28-6.5 7.25-6.5s6.75 2.5 7.25 6.5H4.75Z"/></svg></span><span>Log In</span></a>
           </div>

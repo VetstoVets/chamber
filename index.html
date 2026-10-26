@@ -892,6 +892,7 @@
 
     .board-note { background: var(--navy); color: var(--white); padding: 10px 16px; text-align: center; font-size: 15px; }
     .nav-group { position: relative; display: inline-flex; }
+    .nav-parent { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; font: inherit; color: inherit; }
     .nav-dropdown { display: none; position: absolute; top: 100%; left: 0; background: #ffffff; border: 1px solid var(--line); border-radius: 10px; padding: 8px; z-index: 80; min-width: 190px; box-shadow: 0 12px 28px rgba(6,26,51,.18); }
     .nav-group:hover .nav-dropdown, .nav-group:focus-within .nav-dropdown { display: block; }
     .nav-dropdown a { display: block; padding: 6px 8px; white-space: nowrap; }
@@ -943,7 +944,7 @@
             <a href="https://www.vetstovetsunited.org/what-we-do">About Us</a>
             <a href="https://www.vetstovetsunited.org/enrollment">Our Program</a>
             <a href="https://www.vetstovetsunited.org/ways-to-give">Get Involved</a>
-            <span class="nav-group"><a href="https://www.vetstovetsunited.org/news-announcements">News &amp; Events</a><span class="nav-dropdown"><a href="https://chamber.vetstovetsunited.org/">Chamber Events</a></span></span>
+            <span class="nav-group"><span class="nav-parent">News &amp; Events <svg width="10" height="10" viewBox="0 0 16 11" fill="currentColor" aria-hidden="true"><path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z"></path></svg></span><span class="nav-dropdown"><a href="https://www.vetstovetsunited.org/news-announcements">News &amp; Announcements</a><a href="https://www.vetstovetsunited.org/save-the-date">Vet/Dog Team Graduation</a><a href="https://www.vetstovetsunited.org/5k9-dog-jog">The 5k9 Dog Jog</a><a href="https://events.golfstatus.com/event/vets-to-vets-united-golf-classic/" target="_blank" rel="noopener">VTVUI Golf Classic</a><a href="https://www.vetstovetsunited.org/events">Events Calendar</a><a href="https://chamber.vetstovetsunited.org/" target="_blank" rel="noopener">Chamber Events</a></span></span>
             <a href="https://www.vetstovetsunited.org/contact">Contact Us</a>
             <a class="login-link" href="https://www.vetstovetsunited.org"><span class="login-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 12a4.25 4.25 0 1 0 0-8.5 4.25 4.25 0 0 0 0 8.5Zm-7.25 8.5c.5-4 3.28-6.5 7.25-6.5s6.75 2.5 7.25 6.5H4.75Z"/></svg></span><span>Log In</span></a>
           </div>
